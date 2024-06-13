@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(245, 243, 241);
+}
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+:root {
+    --dark-color: #000000;
+    --disabled-color: #b49a8a;
+    --disabled-grad: linear-gradient(to left, #cfa78e, #b88668);
+    --purp-grad: linear-gradient(to right, #9d88d6, #532caf);
+}
+
+
+.wrapper {
+    margin: 25% auto;
+}
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-cont {
+    border: dashed 1px blueviolet;
+    border-radius: 3px;
+    padding: 30px 0;
+    margin: 30px 10px;
+}
+
+.box {
+    margin:0 0 40px 0;
+}
+
+
+.btn {
+    border: none;
+    border-radius: 40px;
+    padding: 10px 25px;
+    margin: 10px 20px ;
+}
+
+.btn2 {
+    padding: 15px 20px;
+}
+
+.btn3 {
+    background: transparent;
+    color: #000000;
+    border: 1px solid var(--dark-color);
+}
+
+.hov2:hover {
+    background-color: var(--dark-color);
+    color: #fff;
+}
+
+.btn-dark {
+    background-color: var(--dark-color);
+    color: white;
+}
+
+.btn-purp {
+    background: var(--purp-grad);
+    color: white;
+}
+
+.btn-disabled {
+    background: var(--disabled-color);
+    color: white;
+}
+
+.btn-disabled2 {
+    background: var(--disabled-grad);
+    color: white;
+}
+
+.btn-disabled3 {
+    border: 1px solid var(--disabled-color);
+    color: var(--disabled-color);
+}
+
+.hov1:hover {
+    transform: scale(1.06);
+}
+
+.focused1:focus{
+    border: 2px solid #5c31ad;
+    box-shadow: 2px 4px 5px var(--disabled-color);
+}
+
+.focused2:focus{
+    border: 2px solid #000000;
+    box-shadow: 2px 4px 7px rgba(142, 71, 209, 0.925);
+}
